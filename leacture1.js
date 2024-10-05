@@ -130,4 +130,8 @@
 // array in js
 
 let marks = [253, 34, 45, 57, 78, 434]
-console.log(marks);
+// console.log(typeof marks);
+
+for (let i = 0; i < marks.length; i++) {
+    console.log(marks[i]);
+}

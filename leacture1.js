@@ -168,11 +168,45 @@
 
 // }
 // myFunction('Hasnain')
-function myFunction(x, y) {
-    sum = x + y
-    return sum
-    // console.log('wellcome', msg);
+// function myFunction(x, y) {
+//     sum = x + y
+//     return sum
+//     // console.log('wellcome', msg);
+
+// }
+// let result = myFunction(5, 7)
+// console.log(result);
+
+
+// arrow function
+
+// const sum = (a, b) => {
+//     s = a + b
+//     return s
+// }
+// let val = sum(5, 7)
+// console.log(val);
+
+// function countVowels(str) {
+//     let count = 0;
+//     for (let char of str) {
+//         if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u') {
+//             count++;
+//         }
+//     }
+//     console.log(count);
+
+// }
+// countVowels('hasnain')
+
+const countVowels = (str) => {
+    let count = 0;
+    for (let char of str) {
+        if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u') {
+            count++;
+        }
+    }
+    console.log(count);
 
 }
-let result = myFunction(5, 7)
-console.log(result);
+countVowels('aeiou')

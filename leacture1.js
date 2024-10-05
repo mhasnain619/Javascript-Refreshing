@@ -122,6 +122,12 @@
 // );
 
 
-let fullName = prompt("Enter your name without spaces")
-let userName = '@' + fullName.toLowerCase() + fullName.length
-console.log(userName);
+// let fullName = prompt("Enter your name without spaces")
+// let userName = '@' + fullName.toLowerCase() + fullName.length
+// console.log(userName);
+
+
+// array in js
+
+let marks = [253, 34, 45, 57, 78, 434]
+console.log(marks);

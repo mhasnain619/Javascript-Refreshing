@@ -136,13 +136,25 @@
 //     console.log(marks[i]);
 // }
 
-let marks = [253, 34, 45, 57, 78, 434]
+// let marks = [253, 34, 45, 57, 78, 434]
 
-let sum = 0
+// let sum = 0
 
-for (let val of marks) {
-    sum += val
+// for (let val of marks) {
+//     sum += val
+// }
+// let avg = sum / marks.length
+// console.log(avg);
+
+let items = [250, 300, 450, 500, 700, 900]
+let index = 0
+
+for (let val of items) {
+    console.log(`index of  ${index} = ${val} `);
+    let ofer = val / 10
+    items[index] = items[index] - ofer
+    console.log(`value after offer = ${items[index]} `);
+    index++
+
 }
-let avg = sum / marks.length
-console.log(avg);
-
+console.log(items);

@@ -129,9 +129,20 @@
 
 // array in js
 
-let marks = [253, 34, 45, 57, 78, 434]
-// console.log(typeof marks);
+// let marks = [253, 34, 45, 57, 78, 434]
+// // console.log(typeof marks);
 
-for (let i = 0; i < marks.length; i++) {
-    console.log(marks[i]);
+// for (let i = 0; i < marks.length; i++) {
+//     console.log(marks[i]);
+// }
+
+let marks = [253, 34, 45, 57, 78, 434]
+
+let sum = 0
+
+for (let val of marks) {
+    sum += val
 }
+let avg = sum / marks.length
+console.log(avg);
+

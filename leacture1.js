@@ -160,7 +160,7 @@
 // console.log(items);
 
 
-// function 
+// function
 
 
 // function myFunction(msg) {
@@ -236,13 +236,45 @@
 // console.log(outputarray);
 
 
-let userNum = prompt('Inter a number')
-let arr = []
-for (let i = 1; i <= userNum; i++) {
-    arr[i - 1] = i
-}
-let newArray = arr.reduce((prev, curr) => {
-    return prev * curr
-})
-console.log(newArray);
-document.write(newArray)
+// let userNum = prompt('Inter a number')
+// let arr = []
+// for (let i = 1; i <= userNum; i++) {
+//     arr[i - 1] = i
+// }
+// let newArray = arr.reduce((prev, curr) => {
+//     return prev * curr
+// })
+// console.log(newArray);
+// document.write(newArray)
+
+// console.log(window);
+
+// let mydiv = document.querySelector('div')
+// console.dir(mydiv)
+
+// let heading = document.querySelector('h1')
+// let button = document.querySelector('button')
+// button.addEventListener('click', function () {
+//     heading.textContent = 'Hello World'
+// })
+
+// console.dir(button);
+
+// let heading = document.querySelector('h1')
+// let button = document.querySelector('button')
+// button.addEventListener('click', function () {
+//     heading.append = 'Hello World'
+// })
+
+// console.dir(button);
+
+// let heading = document.querySelector('h1')
+// console.log(heading.innerText);
+
+// heading.innerText = heading.innerText + ' From anaintay'
+
+let boxes = document.querySelectorAll('.box')
+boxes[0].innerText = 'hello world from div 1'
+boxes[1].innerText = 'hello world from div 2'
+boxes[2].innerText = 'hello world from div 3'
+console.dir(boxes);

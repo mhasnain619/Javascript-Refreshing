@@ -274,7 +274,15 @@
 // heading.innerText = heading.innerText + ' From anaintay'
 
 let boxes = document.querySelectorAll('.box')
-boxes[0].innerText = 'hello world from div 1'
-boxes[1].innerText = 'hello world from div 2'
-boxes[2].innerText = 'hello world from div 3'
+let ind = 0
+for (let box of boxes) {
+    box.style.background = 'red'
+    box.innerText = `new text from this ${ind}`
+    ind++
+    // console.log(box.innerText);
+
+}
+// boxes[0].innerText = 'hello world from div 1'
+// boxes[1].innerText = 'hello world from div 2'
+// boxes[2].innerText = 'hello world from div 3'
 console.dir(boxes);

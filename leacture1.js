@@ -199,14 +199,50 @@
 // }
 // countVowels('hasnain')
 
-const countVowels = (str) => {
-    let count = 0;
-    for (let char of str) {
-        if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u') {
-            count++;
-        }
-    }
-    console.log(count);
+// const countVowels = (str) => {
+//     let count = 0;
+//     for (let char of str) {
+//         if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u') {
+//             count++;
+//         }
+//     }
+//     console.log(count);
 
+// }
+// countVowels('aeiou')
+
+
+// const arr = [1, 2, 3, 4, 5]
+
+// const outputarray = arr.reduce((res, cur) => {
+//     return res + cur
+// })
+// console.log(outputarray);
+
+
+// const arr = [1, 2, 3, 4, 5]
+
+// const outputarray = arr.reduce((res, cur) => {
+//     return res > cur ? res : cur
+// })
+// console.log(outputarray);
+
+
+// const marks = [90, 20, 95, 40, 80]
+
+// const outputarray = marks.filter((val) => {
+//     return val >= 90
+// })
+// console.log(outputarray);
+
+
+let userNum = prompt('Inter a number')
+let arr = []
+for (let i = 1; i <= userNum; i++) {
+    arr[i - 1] = i
 }
-countVowels('aeiou')
+let newArray = arr.reduce((prev, curr) => {
+    return prev * curr
+})
+console.log(newArray);
+document.write(newArray)

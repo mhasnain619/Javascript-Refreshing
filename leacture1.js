@@ -253,7 +253,6 @@
 // console.dir(mydiv)
 
 // let heading = document.querySelector('h1')
-// let button = document.querySelector('button')
 // button.addEventListener('click', function () {
 //     heading.textContent = 'Hello World'
 // })
@@ -273,16 +272,88 @@
 
 // heading.innerText = heading.innerText + ' From anaintay'
 
-let boxes = document.querySelectorAll('.box')
-let ind = 0
-for (let box of boxes) {
-    box.style.background = 'red'
-    box.innerText = `new text from this ${ind}`
-    ind++
-    // console.log(box.innerText);
+// let boxes = document.querySelectorAll('.box')
+// let ind = 0
+// for (let box of boxes) {
+//     box.style.background = 'red'
+//     box.innerText = `new text from this ${ind}`
+//     ind++
+//     // console.log(box.innerText);
 
+// }
+// // boxes[0].innerText = 'hello world from div 1'
+// // boxes[1].innerText = 'hello world from div 2'
+// // boxes[2].innerText = 'hello world from div 3'
+// console.dir(boxes);
+
+// let boxes = document.querySelector('p')
+// console.log(boxes.getAttribute('class'));
+
+// let button = document.querySelector('button')
+
+// let boxes = document.querySelector('.box')
+// button.addEventListener('click', function () {
+//     boxes.style.backgroundColor = 'pink'
+// })
+
+const content = document.getElementById('content');
+const loader = document.getElementById('loader');
+
+let counter = 1
+
+function loaadMore() {
+    setTimeout(() => {
+        for (let index = 0; index < 10; index++) {
+            const newItem = document.createElement('div')
+            newItem.classList.add('item')
+            newItem.innerText = `item ${counter++}`
+            content.appendChild(newItem)
+        }
+        loader.style.display = 'none'
+    }, 1000)
 }
-// boxes[0].innerText = 'hello world from div 1'
-// boxes[1].innerText = 'hello world from div 2'
-// boxes[2].innerText = 'hello world from div 3'
-console.dir(boxes);
+
+
+loaadMore()
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY + window.innerHeight >= document.body.offsetHeight - 10) {
+        loader.style.display = 'block';
+        loaadMore()
+
+    }
+})
+
+
+
+// Function to simulate fetching data
+// let counter = 1;
+// function loadMoreItems() {
+//     // Simulate an API call
+//     setTimeout(() => {
+//         for (let i = 0; i < 10; i++) {
+//             const newItem = document.createElement('div');
+//             newItem.classList.add('item');
+//             newItem.textContent = `Item ${counter++}`;
+//             content.appendChild(newItem);
+//         }
+//         loader.style.display = 'none';
+//     }, 1000);
+// }
+
+// // Initial loading of items
+// loadMoreItems();
+
+// // Infinite Scroll functionality
+// window.addEventListener('scroll', () => {
+//     const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+
+//     if (scrollTop + clientHeight >= scrollHeight - 5) {
+//         // Show the loader
+//         loader.style.display = 'block';
+
+//         // Load more items
+//         loadMoreItems();
+//     }
+// });
+
